@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background: #D3D3D3;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    float: left;
+    padding: 1% 3%;
+    text-align: center;
+}
+
+/* BG COLORS */
+
+.bg-gradient {
+    background: linear-gradient(to right, #DB7093, #EE82EE, #C71585);
+}
+
+.bg-btn-pink {
+    background-color: rgba(238, 130, 238, 0.6);
+}
+
+.bg-btn-violet {
+    background-color: rgba(219, 112, 147, 0.6);
+}
+
+.radius {
+    border-radius: 4px;
+}
+
+/* HEADER */
+.logo {
+    width: 56px;
+    height: 56px;
+    float: left;
+    background-image: url(..//img/logo.png);
+    font-size: 0;
+}
+
+.btn-menu {
+    width: 45px;
+    height: 45px;
+    float: right;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 56px;
+    cursor: pointer;
+}
+
+/* MENU */
+.menu {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.3);
+    top: 0;
+}
+
+.btn-close {
+    font-size: 1.5em;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin: 2% 3% 0 0;
+}
+
+.menu ul {
+    width: 100%;
+    float: left;
+    text-align: right;
+}
+
+.menu li {
+    padding: 1.5%;
+}
+
+.menu li a {
+    font-size: 1.2em;
+    color: white;
+    padding: 1.5% 3%;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN BANNER */
+.banner {
+    background: url('../img/bg.png');
+}
+
+.title {
+    width: 100%;
+}
+
+.title h2 {
+    font-size: 2em;
+    color: #F5FFFA;
+    font-weight: 700;
+    text-align: left;
+}
+
+.title h3 {
+    font-size: 1.2em;
+    text-align: left;
+    color: #F5FFFA;
+}
+
+.buttons {
+    width: 100%;
+    align-items: center;
+}
+
+.buttons i {
+    float: right;
+    margin-top: 5%;
+}
+
+.btn {
+    width: 70%;
+    font-size: 1.9em;
+    text-align: left;
+    cursor: pointer;
+    padding: 4%;
+    border-radius: 8px;
+}
+
+.btn-cadastrar {  
+    color: #F5FFFA;
+    margin-top: 3%;
+    margin-right: 40%;
+}
+
+.btn-sobre {    
+    color: #F5FFFA;
+    margin-top: 5%;
+    margin-right: 40%;
+}
+
+/* SERVICOS */
+.servico {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 3%;
+}
+
+.servico img {
+    border-radius: 7px 7px 0 0;
+}
+
+.inner {
+    padding: 7%;
+}
+
+.inner a {
+    font-size: 1.5em; 
+    color: #130400;
+    font-weight: 700;
+}
+
+.inner h4 {
+    font-size: 1.2em; 
+    color: #130400;
+    margin-top: 2%;
+}
+
+.inner p {
+    margin-top: 6%;
+    color: #130400;
+    line-height: 1.5em;
+}
+
+/*NEWSLETTER*/
+
+.bg {
+    background-image: url('../img/bg.png');
+}
+.newsletter h2 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 700;
+}
+
+.newsletter h3 {
+    color: #fff;
+}
+
+.newsletter form {
+    margin-top: 2%;
+}
+
+.newsletter input {
+    width: 70%;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 5% ;
+}
+
+.newsletter button {
+    width: 28%;
+    color: #fff;
+    padding: 5%;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    margin-top: 2%;
+}
+
+/*RODAPE */
+.social-icons a {
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 3%;
+}
+
+.social-icons a:last-child {
+    margin-right: 0;
+}
+
+.social-icons a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.copyright {
+    margin-top: 2%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* Media - Responsividades */
+@media screen and (min-width: 480px) {
+    .logo {
+        width: 56px;
+        height: 56px;
+        float: left;
+        background: url(IMAGEM) center center/214px;
+    }
+    .btn {
+        font-size: 2em;
+    }
+}    
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+   .servico {
+       width: 49%;
+       float: left;
+       margin-right: 2%;
+   }
+   .servico:nth-child(2){
+       margin-right: 0;
+   }
+   .newsletter h2 {
+       font-size: 2em;
+   }
+   .newsletter h3 {
+       font-size: 1.5em;
+   }
+   .newsletter input {
+       width: 67%;
+       padding: 2%;
+       float: left;
+   }
+   .newsletter button {
+       width: 32%;
+       padding: 2%;
+       float: right;
+       margin-top: 0;
+   }
+}   
+
+/* Tabelts & Desktops */
+@media screen and (min-width: 960px) {
+    .title {
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+    .title h2 {
+        font-size: 2.5em;
+    }
+    .title h3 {
+        font-size: 1.7em;
+    }
+    .buttons {
+        width: 25%;
+        float: right;
+        margin-top: 20px;
+    }
+    .servico {
+        width: 32%;        
+    }
+    .servico:nth-child(2){
+        margin-right: 2%;
+    }
+    .servico:nth-child(3){
+        margin-right: 0;
+    }
+    .newsletter input {
+        width: 30%;
+        float: none;
+    }
+    .newsletter button {
+        width: 15%;
+        float: none;
+    }
+ }  
+
+ /* Large Devices - wide screens */
+@media screen and (min-width: 1280px) {
+    .header {
+        background: linear-gradient(to left,#DB7093, #EE82EE);
+    }    
+    .btn-menu {
+        display: none;
+    }
+    .btn-close {
+        display: none;
+    }
+    .menu {
+        width: auto;
+        height: 56px;
+        line-height: 56px;
+        float: right;
+        background-color: transparent;
+        display: block !important;
+        position: static;
+    }
+    .menu li {
+        padding: 0;
+        float: left;
+        margin-right: 30px;
+    }
+    .menu li a {
+        color: black;
+        font-size: 1.2em;
+        padding: 30px;
+    }
+    .menu li a:hover {
+        border: none;
+        color: white;
+        font-size: 1.1rem;
+        text-decoration: underline;
+        transition: 0.5s;
+    }
+ }  
